@@ -10,12 +10,30 @@
             <a href="#one">One</a>
             <a href="#two">Two</a>
             <a href="#three">Three</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
         </div> 
-        <div class="vertical-menu">
-                <a href="#" class="active">Link 1</a>
-                <a href="#">Link 2</a>
-                <a href="#">Link 3</a>
-                <a href="#">Link 4</a>
-            </div>    
+        <div class="sidenav">
+            <a href="#" class="active">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+            <a href="#">Link 4</a>
+        </div>   
+        <div>
+            <!--Page stufff -->
+        </div>
+        
+        <Script><
+        /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+        function myFunction()
+        {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        } 
+        </Script>
+
     </body>
 </html> 
