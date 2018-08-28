@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Page Title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="Root.css">
+</head>
+    <body style="margin: 0%">
+        <div class="header">
+            <h1>Website</h1>
+            <p>A website </p>
+        </div>
+
+        
+        <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <div class="topnav" id="myTopnav">
+            <a href="#home" class="active">Home</a>
+            <a href="#news">News</a>
+            <a href="#contact">Contact</a>
+            <a href="#about">About</a>
+            <a href="javascript:void(0);" class="icon" onclick="ResponsiveTopNav()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+        <div class = "main">
+            <div class="sidenav">
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#clients">Clients</a>
+                <a href="#contact">Contact</a>
+            </div>
+
+            <div class ="content" style="padding-left:16px">
+               
+                <div class="card">
+                    <div class="container">
+                        <h4><b>Bleh</b></h4> 
+                        <p>infoasdasdasdasdsar</p> 
+                    </div>
+                </div> 
+
+                <button type="button" onclick="AddNewCard()"> Add Box </button>
+
+            </div>
+        </div>
+
+        <script>
+            function ResponsiveTopNav() 
+            {
+                var x = document.getElementById("myTopnav");
+                if (x.className === "topnav") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "topnav";
+                }
+            }
+
+            function AddNewCard()
+            {
+                var x = document.createElement("card");
+                var t = document.createTextNode("This is a div element.");
+                x.setAttribute("style", "background-color: pink;");
+                x.appendChild(t);
+                document.body.appendChild(x);
+            }
+        </script>
+    </body>
+    
+</html>
